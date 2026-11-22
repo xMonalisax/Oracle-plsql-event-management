@@ -1,7 +1,3 @@
--- Cod din proiectul academic; nu toate exemplele sunt independente.
--- Rulati blocurile individual, dupa initializarea schemei.
-
--- Exemplul 1 (extras din proiectul academic)
 DECLARE
  v_numar_evenimente NUMBER;
 BEGIN
@@ -13,7 +9,7 @@ BEGIN
 END;
 /
 
--- Exemplul 2 (extras din proiectul academic)
+
 DECLARE
     CURSOR c_evenimente IS
         SELECT Nume_eveniment, Data_eveniment FROM Evenimente;
@@ -30,7 +26,7 @@ BEGIN
 END;
 /
 
--- Exemplul 3 (extras din proiectul academic)
+
 DECLARE
     v_id_eveniment NUMBER := 1;  
     v_descriere VARCHAR2(255);
@@ -48,7 +44,7 @@ BEGIN
 END;
 /
 
--- Exemplul 4 (extras din proiectul academic)
+
 DECLARE
     v_exist NUMBER;
 BEGIN
@@ -66,7 +62,7 @@ BEGIN
 END;
 /
 
--- Exemplul 5 (extras din proiectul academic)
+ 
 DECLARE
     CURSOR c_utilizatori IS
         SELECT Id_utilizator, Nume FROM Utilizatori;
@@ -85,7 +81,7 @@ BEGIN
 END;
 /
 
--- Exemplul 6 (extras din proiectul academic)
+ 
 DECLARE
     v_id_utilizator Evenimente.Id_utilizator%TYPE := 1;
     v_nume_eveniment Evenimente.Nume_eveniment%TYPE;
@@ -105,7 +101,7 @@ BEGIN
 END;
 /
 
--- Exemplul 7 (extras din proiectul academic)
+
 DECLARE
     v_id_utilizator Utilizatori.Id_utilizator%TYPE := 1;
     v_nume Utilizatori.Nume%TYPE := 'Calin Ioana Monalisa';
@@ -119,7 +115,7 @@ EXCEPTION
 END;
 /
 
--- Exemplul 8 (extras din proiectul academic)
+ 
 DECLARE
     v_id_utilizator NUMBER := 5; 
     v_nr_evenimente NUMBER;
@@ -139,7 +135,7 @@ EXCEPTION
 END;
 /
 
--- Exemplul 9 (extras din proiectul academic)
+
 DECLARE
     v_id_eveniment Evenimente.Id_eveniment%TYPE := 99;
     v_nume_eveniment Evenimente.Nume_eveniment%TYPE := 'Reuniune de familie';
@@ -153,7 +149,7 @@ EXCEPTION
 END;
 /
 
--- Exemplul 10 (extras din proiectul academic)
+ 
 DECLARE
     v_id_utilizator NUMBER := 10; 
     v_id_eveniment NUMBER := 10;
@@ -178,12 +174,12 @@ EXCEPTION
 END;
 /
 
--- Exemplul 11 (extras din proiectul academic)
+
 DECLARE
     v_nume_utilizator Utilizatori.Nume%TYPE;
-    v_id_utilizator NUMBER := 999; -- un ID care nu există în tabelă
+    v_id_utilizator NUMBER := 999; 
 BEGIN
-    -- Încercăm să extragem numele unui utilizator după un ID inexistent
+  
     SELECT Nume INTO v_nume_utilizator
     FROM Utilizatori
     WHERE Id_utilizator = v_id_utilizator;
