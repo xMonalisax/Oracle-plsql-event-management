@@ -48,23 +48,6 @@ The project contains three PL/SQL packages:
 | `trg_prevent_delete_tip_eveniment` | Prevents deletion of event types associated with events |
 | `trg_salveaza_descriere_veche` | Saves the previous event description before an update |
 
-## Project files
-
-```text
-oracle-plsql-event-management/
-├── images/
-│   └── conceptual_schema.png
-├── sql/
-│   ├── 00_schema.sql
-│   ├── 01_data.sql
-│   ├── 02_packages.sql
-│   ├── 03_triggers.sql
-│   ├── 04_plsql_blocks.sql
-│   ├── 05_smoke_test.sql
-│   └── 06_package_examples.sql
-└── README.md
-```
-
 ## Tools & concepts
 
 **Oracle Database · Oracle SQL Developer · SQL · PL/SQL · Relational modeling · Packages · Procedures · Functions · Cursors · Exceptions · Triggers**
