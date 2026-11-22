@@ -1,5 +1,3 @@
--- Triggere PL/SQL pentru validare si jurnalizarea modificarilor.
-
 CREATE OR REPLACE TRIGGER trg_check_email_format
 BEFORE INSERT ON Utilizatori
 FOR EACH ROW
