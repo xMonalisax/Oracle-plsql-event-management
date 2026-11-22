@@ -1,6 +1,3 @@
--- Examples from the original project document. Run after installing the packages.
--- The first block updates event 2. Run examples individually.
-
 BEGIN
     pck_evenimente.actualizeaza_descriere(2, 'Actualizat: petrecere de 1 mai');
     DBMS_OUTPUT.PUT_LINE('Este un eveniment viitor?' || pck_evenimente.eveniment_este_viitor(2));
