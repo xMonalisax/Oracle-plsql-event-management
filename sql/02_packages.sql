@@ -1,5 +1,3 @@
--- Pachete PL/SQL pentru gestionarea si analiza evenimentelor.
-
 CREATE OR REPLACE PACKAGE pck_utilizatori AS
     PROCEDURE adauga_utilizator(p_id NUMBER, p_nume VARCHAR2, p_email VARCHAR2);
     PROCEDURE sterge_utilizator(p_id NUMBER);
