@@ -1,4 +1,3 @@
--- Verificari nedistructive, utile dupa rularea scripturilor 00-03.
 SET SERVEROUTPUT ON;
 SELECT * FROM Utilizatori ORDER BY Id_utilizator;
 SELECT * FROM Evenimente ORDER BY Id_eveniment;
